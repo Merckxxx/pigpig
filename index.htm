@@ -1,7 +1,7 @@
 <
 <html lang="zh"><head>
     <meta charset="UTF-8" />
-    <title>��У������У԰��</title>
+    <title>返校及进出校园卡</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
     <link rel="stylesheet" href="weui.css">
     <link rel="stylesheet" href="weuix.css">
@@ -9,18 +9,18 @@
     <script src="./fx_files/zepto.min.js"></script>
     <script src="./fx_files/qrcode.js"></script>
 <script type="text/javascript">
-    //�õ�ʱ�䲢д��div
+    //得到时间并写入div
     function getDate(){
-        //��ȡ��ǰʱ��
+        //获取当前时间
         var date = new Date();
-        //��ʽ��Ϊ����ʱ���ʽ
+        //格式化为本地时间格式
         var date1 = date.toLocaleString();
-        //��ȡdiv
+        //获取div
         var div1 = document.getElementById("times");
-        //��ʱ��д��div
+        //将时间写入div
         div1.innerHTML = date1;
     }
-    //ʹ�ö�ʱ��ÿ����divд�뵱ǰʱ��
+    //使用定时器每秒向div写入当前时间
     setInterval("getDate()",1000);
 </script>
 <style type="text/css">
@@ -120,11 +120,11 @@
     <div class="page-hd cl1">
     </div>
     <div class="page-hd cl2">
-        <p style="font-size: 30px; font-family: STHeiti; font-weight: bold; " align="center">�Ƽ���</p>
+        <p style="font-size: 30px; font-family: STHeiti; font-weight: bold; " align="center">黄嘉兴</p>
     </div>
     <div class="page-hd cl3" style=" text-align: center;float:none;">
         <p style="font-size: 20px; text-align:center;">2021103279</p>
-        <p style="font-size: 16px; text-align:center;">����ռ䰲ȫѧԺ</p>
+        <p style="font-size: 16px; text-align:center;">网络空间安全学院</p>
         <p style="font-size: 16px; text-align:center;">
         </p>
         <div id="qr" class="tcenter" style="padding: 10px;height:170px;"><img width="160px" height="160px" src="https://webapi4.jnu.edu.cn/xgfxm/cssjs/imgs/www.png"></div>
@@ -138,7 +138,7 @@
     </div>
 
                 <div id="colorDIV" class="page-hd cl6 cl6_green" permit="green">        
-                <p style=" color:#fff;   font-size: 25px;  font-weight: 200;" align="center">������������</p>
+                <p style=" color:#fff;   font-size: 25px;  font-weight: 200;" align="center">在审批名单内</p>
             </div>
         
     <div class="page-hd cl7"></div>
