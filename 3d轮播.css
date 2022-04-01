@@ -1,0 +1,77 @@
+
+.a {
+    position: relative;
+    perspective: 1600px;
+    top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 5px;
+    z-index: -99;
+    height: 500px;
+    background-color: rgba(255,255,255,1);
+}
+
+        .b{
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            transform-style: preserve-3d;
+            animation: a 8s infinite cubic-bezier(.7,0,.17,1);
+        }
+        .b div{
+            position: absolute;
+            background-size: cover;
+            opacity: .9;
+            width: 400px;
+            height: 250px;
+            transform: rotateY(calc(var(--i)*60deg)) translateZ(600px);
+        }
+        @keyframes a{
+            0%{
+                transform: translateZ(-100px) rotateY(0);
+            }
+            16%{
+                transform: translateZ(-100px) rotateY(-60deg);
+            }
+            32%{
+                transform: translateZ(-100px) rotateY(-120deg);
+            }
+            48% {
+                transform: translateZ(-100px) rotateY(-180deg);
+            }
+            64% {
+                transform: translateZ(-100px) rotateY(-240deg);
+            }
+            80% {
+                transform: translateZ(-100px) rotateY(-300deg);
+            }
+            100%{
+                transform: translateZ(-100px) rotateY(-360deg);
+            }
+        }
+        .c{
+            background-image: url("1.jpg");
+        }
+        .d{
+            background-image: url("2.jpg");
+        }
+        .e{
+            background-image: url("3.jpg");
+        }
+        .f {
+            background-image: url("3.jpg");
+        }
+        .g {
+            background-image: url("3.jpg");
+        }
+        .h {
+            background-image: url("3.jpg");
+        }
