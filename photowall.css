@@ -1,0 +1,156 @@
+@media screen and (min-width:1025px){
+.photowall {
+    position: relative;
+    width: 90vw;
+    height: 25vmax;
+    margin:0 auto;
+    top:-20vh;
+    text-align: center;
+    background-color:rgb(255 255 255 / 0.35);
+    border-radius:15px;
+}
+
+
+.photowall li{
+    position:relative;
+    width:18vmax;
+    height:18vmax;
+    margin:4vh 1.4vw 0;
+    overflow:hidden;
+}
+
+.photowall li img{
+    width:100%;
+    height:100%;
+    background-size:cover;
+    transition:1s linear;/*移入移出都有，放hover中只有鼠标移入有过渡*/
+}
+
+.photowall li:nth-child(even) div{
+    position:absolute;
+    top:18vmax;
+    width:18vmax;
+    height:18vmax;
+    margin:0;
+    background-color:rgb(0 0 0 / 0.4);
+    font-size:4vw;
+    font-weight:400;
+    line-height:18vmax;
+    color:white;
+    transition:top 1s ease;
+}
+
+.photowall li:nth-child(odd) div{
+    position:absolute;
+    top:-18vmax;
+    width:18vmax;
+    height:18vmax;
+    margin:0;
+    background-color:rgb(0 0 0 / 0.4);
+    font-size:4vw;
+    font-weight:400;
+    line-height:18vmax;
+    color:white;
+    transition:top 1s ease;
+}
+}
+
+/*/////////////////////////////////////////////////////手机/////////////////////////////////////////////*/
+@media screen and (max-width:1024px){
+.photowall {
+    position: relative;
+    width: 90vw;
+    height: 50vh;
+    margin:0 auto;
+    top:-20vh;
+    text-align: center;
+    background-color:rgb(255 255 255 / 0.35);
+    border-radius:15px;
+}
+
+.photowall ul{
+    position:relative;
+    display:flex;
+    left:-6vw;
+    top:0vh;
+    flex-wrap:wrap;
+}
+
+.photowall li{
+    position:relative;
+    width:16vmax;
+    height:16vmax;
+    margin:4vh 1.4vw 0;
+    overflow:hidden;/**/
+}
+
+.photowall li img{
+    width:100%;
+    height:100%;
+    background-size:cover;
+    transition:1s linear;/*移入移出都有，放hover中只有鼠标移入有过渡*/
+}
+
+.photowall li div{
+    position:absolute;
+    width:18vmax;
+    height:18vmax;
+    margin:0;
+    background-color:rgb(0 0 0 / 0.4);
+    font-size:4vw;
+    font-weight:400;
+    line-height:18vmax;
+    color:white;
+    transition:top 1s ease;
+}
+
+.photowall li:nth-child(1) div{
+    top:18vmax;
+}
+
+.photowall li:nth-child(2) div{
+    top:18vmax;
+}
+
+.photowall li:nth-child(3) div{
+    top:-18vmax;
+}
+
+.photowall li:nth-child(4) div{
+    top:-18vmax;
+}
+}
+
+.photowall h1{
+    position:absolute;
+}
+
+.photowall ul{
+    position:absolute;
+    display: flex;
+    list-style: none;
+}
+
+.photowall li:hover img{
+    transform: scale(1.15);
+}
+
+.photowall li:hover div{
+    top:0;
+}
+
+.photowall li:nth-of-type(1) img{
+    background-image:url(../img/p1.jpg);
+}
+
+.photowall li:nth-of-type(2) img{
+    background-image:url(../img/p31.jpg);
+}
+
+.photowall li:nth-of-type(3) img{
+    background-image:url(../img/p21.jpg);
+}
+
+.photowall li:nth-of-type(4) img{
+    background-image:url(../img/p15.jpg);
+}
