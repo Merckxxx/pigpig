@@ -83,10 +83,10 @@ div.rarrow img {
 @media screen and (max-width:1024px){
 .lunbo{
     position: relative;
-    width:104vw;
+    width:100vw;
     height:30vh;
     left:-6vw;
-    margin: 10vh 0;
+    margin: 10vh 2vw 10vh 0;
     overflow:hidden;
 }
 
