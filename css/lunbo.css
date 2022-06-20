@@ -106,7 +106,7 @@ div.rarrow img {
     float: left;
     width: 100vw;
     height: 30vh;
-    margin: auto 2vw;
+    margin: auto 0vw;
     background-size: cover;
 }
 
