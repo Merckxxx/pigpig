@@ -71,7 +71,7 @@
 .photowall ul{
     position:relative;
     display:flex;
-    left:-6vw;
+    left:0vw;
     top:0vh;
     flex-wrap:wrap;
 }
