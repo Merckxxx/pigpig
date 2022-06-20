@@ -75,7 +75,7 @@
 }
 }
 
-/*///////////////////////////////////////////////////�ֻ�/////////////////////////////////////////*/
+/*///////////////////////////////////////////////////ÊÖ»ú/////////////////////////////////////////*/
 @media screen and (max-width:1024px){
 .timeaxis{
     position:relative;
@@ -89,7 +89,7 @@
     position:absolute;
     width:2vw;
     height:360vh;
-    left:47.5vw;
+    left:49.5vw;
     background-color:white;
 }
 
@@ -97,7 +97,7 @@
     position: absolute;
     width: 2vw;
     height: 30vh;
-    left: 47.5vw;
+    left: 49.5vw;
     background-image:linear-gradient(white,lightslategray,lightslategray,white);
     top: -10vh;
     z-index: 1;
