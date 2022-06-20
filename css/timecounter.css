@@ -1,0 +1,233 @@
+@media screen and (max-width:375px){
+.container {
+    width: 80%;
+    height: 40vh;
+    margin: 15% auto;
+    margin-bottom:0;
+    padding: 11% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color:rgb(0 0 0 / 0.00);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 8em;
+    line-height: 0.9em;
+    color: white;
+    margin-top: -80px;
+    position: absolute;
+    top: 100px;
+    text-shadow: 4px 4px 10px rgb(0 0 0 / 0.60);
+}
+
+.container span {
+    display: block;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 0.5em;
+}
+
+.countdouwn {
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    top: 100px;
+    background-color: rgb(0 0 0 / 0.00);
+}
+
+.countdouwn div {
+    position: relative;
+    top: 20px;
+    width: 60px;
+    height: 45px;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(53 51 51 / 0.50);
+    color: #ffffff;
+    margin: 0 10px 10px;
+    font-size: 2em;
+    font-weight: 500;
+    border-radius: 15px 15px 0 0;
+}
+
+.countdouwn div:before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #ff0;
+    color: #333;
+    font-size: 0.45em;
+    line-height: 20px;
+    font-weight: 300;
+    border-radius: 0 0 15px 15px;
+}
+}
+
+@media screen and (max-width:428px) and (min-width:376px) {
+.container {
+    width: 80%;
+    height: 40vh;
+    margin: 15% auto;
+    padding: 11% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(0 0 0 / 0.00);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 8em;
+    line-height: 0.9em;
+    color: white;
+    margin-top: -80px;
+    position: absolute;
+    top: 100px;
+    text-shadow: 4px 4px 10px rgb(0 0 0 / 0.60);
+}
+
+.container span {
+    display: block;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 0.5em;
+}
+
+.countdouwn {
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    top: 100px;
+    background-color: rgb(0 0 0 / 0.00);
+}
+
+    .countdouwn div {
+        position: relative;
+        top: 20px;
+        width: 65px;
+        height: 45px;
+        line-height: 50px;
+        text-align: center;
+        background: rgb(53 51 51 / 0.50);
+        color: #ffffff;
+        margin: 0 10px 10px;
+        font-size: 2em;
+        font-weight: 500;
+        border-radius: 15px 15px 0 0;
+    }
+
+        .countdouwn div:before {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: #ff0;
+            color: #333;
+            font-size: 0.5em;
+            line-height: 20px;
+            font-weight: 300;
+            border-radius: 0 0 15px 15px;
+        }
+}
+
+
+@media screen and (max-width:2560px) and (min-width:1024px){
+    .container {
+        width: 80%;
+        height:25vh;
+        margin: 0.5% auto;
+        padding: 11% 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        background-color: rgb(0 0 0 / 0.00);
+    }
+
+.container h1 {
+     text-align: center;
+     font-size: 8em;
+     line-height: 0.9em;
+     color: white;
+     margin-top: -80px;
+     position: absolute;
+     top: 100px;
+     text-shadow: 5px 5px 8px rgb(0 0 0 / 0.45);
+}
+
+        .container span {
+            display: block;
+            font-weight: 400;
+            letter-spacing: 6px;
+            font-size: 0.5em;
+        }
+
+    .countdouwn {
+        display: flex;
+        margin-top: 50px;
+        position: relative;
+        top: 100px;
+        background-color: rgb(0 0 0 / 0.00);
+    }
+
+        .countdouwn div {
+            position: relative;
+            top: 45px;
+            width: 6vw;
+            height: 4.5vmax;
+            line-height: 4.5vmax;
+            text-align: center;
+            background: rgb(53 51 51 / 0.50);
+            color: #ffffff;
+            margin: 0 15px;
+            font-size: 3vw;
+            font-weight: 500;
+            border-radius: 15px 15px 0 0;
+            box-shadow: rgb(0 0 0 / 0.35) 5px 5px 8px;
+            transition: 0.5s ease
+        }
+
+.countdouwn div:before {
+    content: "";
+    position: absolute;
+    bottom: -1.5vmax;
+    left: 0;
+    width: 100%;
+    height: 1.5vmax;
+    background: #ff0;
+    color: #333;
+    font-size: 0.3em;
+    line-height: 1.5vmax;
+    font-weight: 300;
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgb(0 0 0 / 0.45) 5px 5px 8px ;
+}
+}
+
+  .countdouwn #day:before {
+    content: "Day";
+  }
+
+  .countdouwn #hour:before {
+    content: "Hour";
+  }
+
+  .countdouwn #minute:before {
+    content: "Minute";
+  }
+
+  .countdouwn #second:before {
+    content: "Second";
+  }

@@ -1,0 +1,43 @@
+@media screen and (min-width:1025px){
+.backgroundin{
+    font: 600 12vw '';
+    line-height: 40vh;
+    height: 40vh;
+}
+}
+
+@media screen and (max-width:1024px){
+.backgroundin{
+    font: 800 15vw '';
+    line-height: 20vh;
+    height: 20vh;
+}
+}
+
+.backgroundin {
+    background-image: url("../img/textbackground.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    width: 78vw;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.backgroundin::before {
+    content: '';
+    background-size: cover;
+    background-image: inherit;
+    background-position: 50% 50%;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -99;
+}

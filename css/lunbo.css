@@ -1,0 +1,196 @@
+@media screen and (min-width:1025px){
+.lunbo{
+    position: relative;
+    width:100%;
+    height:85vh;
+    margin: 30vh auto 6vh auto;
+    overflow:hidden;
+}
+
+.lunbo ul.picture{
+    position:relative;
+    display:flex;
+    float:left;
+    top:-4vmin;
+    left:-3vw;
+    text-decoration:none;
+    transition:0.5s ease;
+}
+
+.lunbo li.pictures {
+    position: relative;
+    display: flex;
+    float: left;
+    width: 100vw;
+    height: 85vh;
+    margin: auto 0vw;
+    background-size: cover;
+}
+
+.lunbo ul.imgword {
+    position: absolute;
+    display: flex;
+    float: left;
+    left:-303vw;
+    transition:0.75s;
+}
+
+.lunbo ul.imgword div {
+    border-radius: 0;
+    background-color: rgb(0 0 0 / 0.50);
+    position: relative;
+    margin: 30vh 40vw;
+    width: 20vw;
+    height: 12vh;
+    color:white;
+    font-size:5vmin;
+    font-weight:300;
+    line-height:12vmin;
+    text-align:center;
+    opacity:0.65;
+}
+
+div.larrow {
+    position: absolute;
+    top: 8vh;
+    right: -5vw;
+}
+
+div.rarrow {
+    position: absolute;
+    top: 8vh;
+    left: -5vw;
+}
+
+div.larrow img {
+    background-size: 100%;
+    width: 10vw;
+    height: 45vh;
+    opacity:0.6;
+    transition:0.5s;
+}
+
+div.rarrow img {
+    background-size: cover;
+    width: 10vw;
+    height:45vh;
+    opacity:0.6;
+    transition:0.5s
+}
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width:1024px){
+.lunbo{
+    position: relative;
+    width:104vw;
+    height:30vh;
+    left:-8.5vw;
+    margin: 10vh 0 6vh 0;
+    overflow:hidden;
+}
+
+.lunbo ul.picture{
+    position:relative;
+    display:flex;
+    float:left;
+    top:-4vmin;
+    left:-3vw;
+    text-decoration:none;
+    transition:0.5s ease;
+}
+
+.lunbo li.pictures {
+    position: relative;
+    display: flex;
+    float: left;
+    width: 100vw;
+    height: 30vh;
+    margin: auto 0vw;
+    background-size: cover;
+}
+
+.lunbo ul.imgword {
+    position: absolute;
+    display: flex;
+    float: left;
+    left:-303vw;
+    transition:0.75s;
+}
+
+.lunbo ul.imgword div {
+    border-radius: 0;
+    background-color: rgb(0 0 0 / 0.50);
+    position: relative;
+    margin: 10vh 40vw;
+    width: 20vw;
+    height: 5vh;
+    color:white;
+    font-size:5vmin;
+    font-weight:300;
+    line-height:12vmin;
+    text-align:center;
+    opacity:0.65;
+}
+
+div.larrow {
+    position: absolute;
+    top: 5vh;
+    right: -1.5vw;
+}
+div.rarrow {
+    position: absolute;
+    top: 5vh;
+    left: 6.5vw;
+}
+
+div.larrow img {
+    background-size: 100%;
+    width: 10vw;
+    height: 15vh;
+    opacity:0.7;
+    transition:0.5s;
+}
+
+div.rarrow img {
+    background-size: cover;
+    width: 10vw;
+    height:15vh;
+    opacity:0.7;
+    transition:0.5s
+}
+}
+
+
+/**/
+div.larrow img:hover{
+    cursor:pointer;
+    opacity:0.9;
+    transform:scale(1.02);
+}
+
+div.rarrow img:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.lunbo li.pictures:nth-of-type(1) {
+    background-color: aqua;
+    background-image: url(../img/100.jpg);
+}
+
+.lunbo li.pictures:nth-of-type(2) {
+    background-color: antiquewhite;
+    background-image: url(../img/200.jpg);
+}
+
+.lunbo li.pictures:nth-of-type(3) {
+    background-color: blueviolet;
+    background-image: url(../img/300.jpg);
+}
+
+.lunbo li.pictures:nth-of-type(4) {
+    background-color: lightyellow;
+    background-image: url(../img/365.jpg);
+}

@@ -1,0 +1,62 @@
+@media screen and (min-width:1025px){
+.rolling1{
+    height:40vh;
+    font-size:5vw;
+    font-weight: 300;
+    line-height:40vmin;
+}
+
+.rolling2{
+    height:95vh;
+    font-weight:300;
+    font-size:4vw;
+    line-height:95vh;
+}
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width:1024px){
+.rolling1{
+    height:20vh;
+    font-size:8vw;
+    font-weight: 300;
+    line-height:20vh;
+}
+
+.rolling2{
+    height:90vh;
+    font-weight:500;
+    font-size:7vw;
+    line-height:90vh;
+}
+}
+
+.rolling1{
+    width:100%;
+    background-color:rgb(255 255 255);
+    margin:0;
+    text-align:center;
+    color:black;
+    border-radius:0;
+}
+
+.rolling2{
+    width:100%;
+    margin:0;
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    text-align:center;
+    color:white;
+    border-radius:0;
+}
+
+.rolling2.bg1{
+     background-image:url(../img/bg1.jpg);
+         background-position:60% center;
+}
+
+.rolling2.bg2{
+     background-image:url(../img/bg4.jpg);
+     background-position:center center;
+}

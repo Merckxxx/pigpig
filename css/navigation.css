@@ -1,0 +1,281 @@
+/*电脑、平板横屏/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width:1025px){
+.navigation {
+    margin: 0 auto 30vh auto;
+    height: 10vh;
+    width: 70vw;
+    position:relative;
+    text-align: center;
+    list-style-type: none;
+    border-bottom: #ffffff 3px solid;
+    z-index:99999999;
+}
+
+.navigation li{
+    display:block;
+    float:left;
+    left:0;
+    margin:0 0vw;
+    position:relative;
+    width:20%;
+    transition:0.5s;
+}
+
+.navigation img{
+    width:50px;
+    height:50px;
+    margin-left:1.5vw;
+    margin-top:1vh;
+    border-radius:50%;
+    background-color:rgb(0 0 0 / 0.00);
+}
+
+.navigation a{
+    font-size:1.85vw;
+    color:white;
+    line-height:10vh;
+    text-align:center;
+    text-decoration:none;
+    text-shadow:5px 5px 8px rgb(0 0 0 / 0.60);
+    transition:0.8s ease;
+}
+
+.navigation a:hover{
+    font-size:1.8vw;
+    color:lightpink;
+}
+
+.navigation li.word:hover{
+     border-bottom:lightpink 3px solid;
+}
+
+.navigation2{
+    position:sticky;
+    width:100%;
+    height:7vh;
+    top:0;
+    background-color:white;
+    opacity:0.7;
+    z-index:999;
+    box-shadow:5px 5px 10px rgb(0 0 0 / 0.80);
+    transition:0.5s;
+}
+
+.navigation2 ul{
+    position:relative;
+    display:flex;
+    width:24vw;
+    height:4vh;
+    left:65vw;
+    top:2vh;
+    list-style-type:none;
+}
+
+.navigation2 ul li{
+    position:relative;
+    margin:0 1vw;
+    text-align:center;
+}
+
+.navigation2 ul div{
+    position:absolute;
+    display:flex;
+    height:0.8vh;
+    width:6vw;
+    left:-3vw;
+    top:4.2vh;
+    border-radius:5px;
+    transition:1s ease;
+    visibility:hidden;
+}
+
+.navigation2 img{
+    position:absolute;
+    width:5vmin;
+    height:5vmin;
+    border-radius:50%;
+    top:1vh;
+    left:2vw;
+    opacity:0.7
+}
+
+.navigation2 ul li.first:hover~div{
+    visibility:visible;
+    left:3vw;
+    width:4vw;
+    background-color:burlywood;
+}
+
+.navigation2 ul li.second:hover~div{
+    visibility:visible;
+    left:9vw;
+    width:7vw;
+    background-color:mediumaquamarine;
+}
+
+.navigation2 ul li.third:hover~div{
+    visibility:visible;
+    left:18vw;
+    width:7vw;
+    background-color: lightpink;
+}
+
+.navigation2 ul li.forth:hover~div{
+    visibility:visible;
+    left:26vw;
+    width:5vw;
+    background-color:lightblue;
+}
+
+.navigation2 ul li a{
+    text-decoration:none;
+    font-size:1.05vw;
+    font-weight:400;
+    color:black;
+    transition:1s ease;
+}
+}
+
+/*手机、平板竖屏//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width:1024px){
+.navigation{
+    position:relative;
+    margin: 0 auto 15vh auto;
+    height: 15vh;
+    width: 80vw;
+    display:flex;
+    list-style-type: none;
+    border-bottom: #ffffff 3px solid;
+}
+
+.navigation li{
+    position:relative;
+    left:-3vw;
+    margin:0 1vw;
+    width:30%;
+    transition:0.5s;
+}
+
+.navigation img{
+    position:absolute;
+    width:35px;
+    height:35px;
+    left:-5vw;
+    margin-top:1vh;
+    border-radius:50%;
+    background-color:rgb(0 0 0 / 0.00);
+}
+
+.navigation a{
+    font-size:3.5vw;
+    color:white;
+    line-height:20vh;
+    text-align:center;
+    text-decoration:none;
+    text-shadow:5px 5px 8px rgb(0 0 0 / 0.60);
+    transition:0.8s ease;
+}
+
+.navigation a:hover{
+    font-size:3.46vw;
+    color:lightpink;
+}
+
+.navigation2{
+    position:sticky;
+    width:100%;
+    height:10vh;
+    top:0;
+    background-color:white;
+    opacity:0.7;
+    z-index:999;
+    box-shadow:10px 10px 20px rgb(0 0 0 / 0.80);
+    transition:0.5s;
+}
+
+.navigation2 ul{
+    position:relative;
+    display:flex;
+    height:4vh;
+    left:12vw;
+    top:3vh;
+    list-style-type:none;
+}
+
+.navigation2 ul li{
+    position:relative;
+    margin:0 1vw;
+    text-align:center;
+}
+
+.navigation2 ul div{
+    position:absolute;
+    display:flex;
+    height:0.8vh;
+    width:15vw;
+    left:-3vw;
+    top:6.2vh;
+    border-radius:5px;
+    transition:1s ease;
+    visibility:hidden;
+}
+
+.navigation2 img{
+    position:absolute;
+    width:10vmin;
+    height:10vmin;
+    border-radius:50%;
+    top:2.5vh;
+    left:4vw;
+    opacity:0.7
+}
+
+.navigation2 ul li.first:hover~div{
+    visibility:visible;
+    left:10vw;
+    width:12vw;
+    background-color:burlywood;
+}
+
+.navigation2 ul li.second:hover~div{
+    visibility:visible;
+    left:23vw;
+    width:22vw;
+    background-color:mediumaquamarine;
+}
+
+.navigation2 ul li.third:hover~div{
+    visibility:visible;
+    left:45vw;
+    width:23vw;
+    background-color: lightpink;
+}
+
+.navigation2 ul li.forth:hover~div{
+    visibility:visible;
+    left:66vw;
+    width:15vw;
+    background-color:lightblue;
+}
+
+.navigation2 ul li a{
+    text-decoration:none;
+    font-size:3vw;
+    font-weight:600;
+    color:black;
+    transition:1s ease;
+}
+}
+
+.navigation2 ul li.first a:hover{
+    color:burlywood;
+}
+.navigation2 ul li.second a:hover{
+    color:mediumaquamarine;
+}
+.navigation2 ul li.third a:hover{
+    color:lightpink;
+}
+.navigation2 ul li.forth a:hover{
+    color: lightblue;
+}

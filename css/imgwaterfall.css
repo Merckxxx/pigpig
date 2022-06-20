@@ -1,0 +1,230 @@
+@media screen and (min-width:1025px){
+.colorbar1 {
+    position: absolute;
+    width: 15vw;
+    height: 150vh;
+    top: 0vh;
+    left: 62vw;
+    background-image: linear-gradient(#a8ffe2,lightcyan);
+    z-index: -999;
+}
+
+.colorsqure1 {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    top: 195vh;
+    left: 1vw;
+    background-color: rgb(255 255 255 / 0.00);
+    border: 1vw #a8ffe2 solid;
+    z-index: 0;
+    transform: rotate(30deg);
+    transition: 18s;
+}
+
+.colorsqure2 {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    top: 95vh;
+    left: 85vw;
+    background-color: rgb(255 255 255 / 0.00);
+    border: 0.5vw #a8ffe2 solid;
+    z-index: 0;
+    transform: rotate(60deg);
+    transition: 12s;
+}
+
+.waterfall {
+    width: 80vw;
+    margin: 5vh auto 15vh auto;
+    column-count: 4;
+    column-gap: 1.5vh;
+}
+
+.waterfall img {
+    width:19.5vw;
+    position: relative;
+    margin-bottom: 1.5vh;
+    break-inside: avoid;
+    z-index: 1;
+    background-size: cover;
+    opacity: 0.9;
+    border-radius: 10px;
+    transition: 0.8s;
+    box-shadow: 5px 5px 8px rgb(0 0 0 / 0.40);
+}
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width:1024px){
+.colorbar1 {
+    position: absolute;
+    width: 20vw;
+    height: 150vh;
+    top: 0vh;
+    left: 62vw;
+    background-image: linear-gradient(#a8ffe2,lightcyan);
+    z-index: -999;
+}
+
+.colorsqure1 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    top: 280vh;
+    left: 0vw;
+    background-color: rgb(255 255 255 / 0.00);
+    border: 4vw #a8ffe2 solid;
+    z-index: 0;
+    transform: rotate(30deg);
+    transition: 18s;
+}
+
+.colorsqure2 {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    top: 95vh;
+    left: 85vw;
+    background-color: rgb(255 255 255 / 0.00);
+    border: 2vw #a8ffe2 solid;
+    z-index: 0;
+    transform: rotate(60deg);
+    transition: 12s;
+}
+
+.waterfall {
+    width: 80vw;
+    margin: 5vh auto;
+    column-count: 2;
+    column-gap: 1.5vh;
+}
+
+.waterfall img {
+    width:40vw;
+    position: relative;
+    margin-bottom: 1.5vh;
+    break-inside: avoid;
+    z-index: 1;
+    background-size: cover;
+    opacity: 0.9;
+    border-radius: 10px;
+    transition: 0.8s;
+    box-shadow: 5px 5px 8px rgb(0 0 0 / 0.40);
+}
+}
+
+
+.colorsqure1:hover, .colorsqure2:hover {
+    transform: rotate(390deg);
+}
+
+.waterfall img:hover {
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+.waterfall img:nth-of-type(1) {
+    content:url(../img/p2.jpg);
+}
+
+.waterfall img:nth-of-type(2) {
+    content:url(../img/p3.jpg);
+}
+
+.waterfall img:nth-of-type(3) {
+    content:url(../img/p4.jpg);
+}
+
+.waterfall img:nth-of-type(4) {
+    content:url(../img/p5.jpg);
+}
+
+.waterfall img:nth-of-type(5) {
+    content:url(../img/p6.jpg);
+}
+
+.waterfall img:nth-of-type(6) {
+    content:url(../img/p7.jpg);
+}
+
+.waterfall img:nth-of-type(7) {
+    content:url(../img/p8.jpg);
+}
+
+.waterfall img:nth-of-type(8) {
+    content:url(../img/p9.jpg);
+}
+
+.waterfall img:nth-of-type(9) {
+    content:url(../img/p10.jpg);
+}
+
+.waterfall img:nth-of-type(10) {
+    content:url(../img/p11.jpg);
+}
+
+.waterfall img:nth-of-type(11) {
+    content:url(../img/p12.jpg);
+}
+
+.waterfall img:nth-of-type(12) {
+    content:url(../img/p13.jpg);
+}
+
+.waterfall img:nth-of-type(13) {
+    content:url(../img/p14.jpg);
+}
+
+.waterfall img:nth-of-type(14) {
+    content:url(../img/p16.jpg);
+}
+
+.waterfall img:nth-of-type(15) {
+    content:url(../img/p17.jpg);
+}
+
+.waterfall img:nth-of-type(16) {
+    content:url(../img/p18.jpg);
+}
+
+.waterfall img:nth-of-type(17) {
+    content:url(../img/p19.jpg);
+}
+
+.waterfall img:nth-of-type(18) {
+    content:url(../img/p20.jpg);
+}
+
+.waterfall img:nth-of-type(19) {
+    content:url(../img/p22.jpg);
+}
+
+.waterfall img:nth-of-type(20) {
+    content:url(../img/p23.jpg);
+}
+
+.waterfall img:nth-of-type(21) {
+    content:url(../img/p24.jpg);
+}
+
+.waterfall img:nth-of-type(22) {
+    content:url(../img/p25.jpg);
+}
+
+.waterfall img:nth-of-type(23) {
+    content:url(../img/p26.jpg);
+}
+
+.waterfall img:nth-of-type(24) {
+    content:url(../img/p27.jpg);
+}
+
+.waterfall img:nth-of-type(25) {
+    content:url(../img/p29.jpg);
+}
+
+.waterfall img:nth-of-type(26) {
+    content:url(../img/p30.jpg);
+}
