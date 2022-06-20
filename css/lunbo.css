@@ -85,7 +85,7 @@ div.rarrow img {
     position: relative;
     width:100vw;
     height:30vh;
-    left:-3vw;
+    left:-1vw;
     margin: 10vh 0vw 10vh 0;
     overflow:hidden;
 }
@@ -104,9 +104,9 @@ div.rarrow img {
     position: relative;
     display: flex;
     float: left;
-    width: 96vw;
+    width: 94vw;
     height: 30vh;
-    margin: auto 2vw;
+    margin: auto 3vw;
     background-size: cover;
 }
 
