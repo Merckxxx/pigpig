@@ -1,0 +1,362 @@
+<HTML>
+<HEAD>
+    <meta charset="UTF-8">
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>EXPERIENCES</title>
+    <link href="css/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="css/timeaxis.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            margin: 0;
+            background-color: lightslategray;
+        }
+    </style>
+</HEAD>
+
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+    <div class="navigation2" id="nav2">
+        <ul>
+            <li class="first"><a href="home.html">HOME</a></li>
+            <li class="second"><a href="photo.html">PHOTOGRAPH</a></li>
+            <li class="third"><a href="experiences.html">EXPERIENCES</a></li>
+            <li class="forth"><a href="future.html">TO&nbsp;DO</a></li>
+            <div></div>
+        </ul>
+        <img src="img/pig.svg" />
+    </div>
+    <script>
+        function isscroll() {
+            var scrolled = document.body.scrollTop;
+            if (scrolled > 0) {
+                document.getElementById("nav2").style.opacity = 0.95;
+            }
+            else document.getElementById("nav2").style.opacity = 0.7;
+        }
+        document.addEventListener("scroll", isscroll);
+    </script>
+
+
+
+    <div class="timeaxis">
+        <div class="rollingaxis" id="rollingaxis"></div>
+        <script>
+            var raxis = document.getElementById("rollingaxis");
+            var height = -10;
+            function downing() {
+                raxis.style.top = height + 10 + "vh";
+                height = height + 10;
+                if (height == 380) {
+                    height = -10;
+                    raxis.style.opacity = "0";
+                    setTimeout("raxis.style.top = '-200vh'", 1000);
+                    setTimeout("raxis.style.opacity = '1'", 1500);
+                }
+            }
+            setInterval(downing, 500)
+        </script>
+
+        <div class="axis"></div>
+
+        <div class="box">
+            <div class="left">
+                <span>相识的日子，也是故事的开始。</span>
+            </div>
+            <div class="center">
+                21.04.26
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                21.05.26
+            </div>
+            <div class="right">
+                <span>中午考完模拟考，我们第一次一起吃饭。</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <span>高考前一下午，我们一起去看考场，喂明德鸭。</span>
+            </div>
+            <div class="center">
+                21.06.06
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                21.06.10
+            </div>
+            <div class="right">
+                <span>回学校领毕业证那天，我们拍了第一张合照。</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <span>在一起的第一天，第一次牵着你的手。</span>
+            </div>
+            <div class="center">
+                21.06.29
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                21.07.01
+            </div>
+            <div class="right">
+                <span>分别的时候，第一次抱着你。</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <span> 得知要异地后，第一次亲你。</span>
+            </div>
+            <div class="center">
+                21.07.23
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                21.07.27
+            </div>
+            <div class="right">
+                <span> 第一次一起做蛋糕。</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <span>第一次一起过生日。</span>
+            </div>
+            <div class="center">
+                21.07.28
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                21.08.01
+            </div>
+            <div class="right">
+                <span>第一次给你过生日、一起看电影。</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <span>跟你过的第一个情人节。</span>
+            </div>
+            <div class="center">
+                21.08.14
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                21.09.03
+            </div>
+            <div class="right">
+                <span>开学，开始了第一次的异地。</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <span>第一次给对方空投东西。</span>
+            </div>
+            <div class="center">
+                21.09.06
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                21.10.06
+            </div>
+            <div class="right">
+                <span>day 100</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <span>第一次跟你吵架，吵得很凶。</span>
+            </div>
+            <div class="center">
+                21.10.23
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                21.11.05
+            </div>
+            <div class="right">
+                <span>第一次视频聊天。</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <span>day 200</span>
+            </div>
+            <div class="center">
+                22.01.14
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                22.01.25
+            </div>
+            <div class="right">
+                <span> 一起设计、做戒指。</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <span>第一次一起打羽毛球。</span>
+            </div>
+            <div class="center">
+                22.01.28
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                22.01.31
+            </div>
+            <div class="right">
+                <span> 第一次一起跨年。</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <span>一起过的第二个情人节。</span>
+            </div>
+            <div class="center">
+                22.02.14
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                21.03.13
+            </div>
+            <div class="right">
+                <span>开学，开始第二次异地。</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <span> day 300</span>
+            </div>
+            <div class="center">
+                21.04.24
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                21.06.29
+            </div>
+            <div class="right">
+                <span>day 365</span>
+            </div>
+        </div>
+
+        <div class="box">
+                <div class="left" style="opacity:0">
+
+                </div>
+                <div class="center">
+                    …
+                </div>
+                <div class="right">
+
+                </div>
+        </div>
+        </div>
+</body>
+</HTML>

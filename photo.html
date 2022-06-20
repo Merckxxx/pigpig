@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <title>PHOTOGRAPH</title>
+    <link href="css/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="css/imgwaterfall.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            margin: 0;
+            background-color: lightcyan;
+        }
+    </style>
+</HEAD>
+
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+    <div class="navigation2" id="nav2">
+        <ul>
+            <li class="first"><a href="home.html">HOME</a></li>
+            <li class="second"><a href="photo.html">PHOTOGRAPH</a></li>
+            <li class="third"><a href="experiences.html">EXPERIENCES</a></li>
+            <li class="forth"><a href="future.html">TO&nbsp;DO</a></li>
+            <div></div>
+        </ul>
+        <img src="img/pig.svg" />
+    </div>
+
+    <script>
+        function isscroll() {
+            var scrolled = document.body.scrollTop;
+            if (scrolled > 0) {
+                document.getElementById("nav2").style.opacity = 0.95;
+                //document.getElementById("nav2").style.backgroundColor ="#a1e6ff";
+            }
+            else document.getElementById("nav2").style.opacity = 0.7;
+        }
+        document.addEventListener("scroll", isscroll);
+    </script>
+
+    <div class="waterfall" id="waterfall">
+        <img class="img" data-scroll-reveal="enter top over 3s after 0.5s" />
+        <img class="img" data-scroll-reveal="enter right after 0.5s" />
+        <img class="img" data-scroll-reveal="enter bottom over 1s and move 300px after 0.3s" />
+        <img class="img" data-scroll-reveal="enter bottom over 1s and move 100px" />
+        <img class="img" data-scroll-reveal="enter top over 0.5s and move 200px" />
+        <img class="img" data-scroll-reveal="enter bottom over 1s and move 100px" />
+        <img class="img" data-scroll-reveal="enter bottom over 1s and move 300px after 0.3s" />
+        <img class="img" data-scroll-reveal="enter top over 3s after 0.5s" />
+        <img class="img" data-scroll-reveal="enter left" />
+        <img class="img" data-scroll-reveal="enter top" />
+        <img class="img" data-scroll-reveal="enter top over 3s after 0.5s" />
+        <img class="img" data-scroll-reveal="enter bottom over 1s and move 100px" />
+        <img class="img" data-scroll-reveal="enter top over 0.5s and move 200px" />
+        <img class="img" data-scroll-reveal="enter top over 3s after 0.5s" />
+        <img class="img" data-scroll-reveal="enter right after 0.5s" />
+        <img class="img" data-scroll-reveal="enter top over 3s after 0.5s" />
+        <img class="img" data-scroll-reveal="enter left" />
+        <img class="img" data-scroll-reveal="enter right after 0.5s" />
+        <img class="img" data-scroll-reveal="enter top" />
+        <img class="img" data-scroll-reveal="enter bottom over 1s and move 100px" />
+        <img class="img" data-scroll-reveal="enter top over 0.5s and move 200px" />
+        <img class="img" data-scroll-reveal="enter bottom over 1s and move 300px after 0.3s" />
+        <img class="img" data-scroll-reveal="enter right after 0.5s" />
+        <img class="img" data-scroll-reveal="enter left" />
+        <img class="img" data-scroll-reveal="enter top over 3s after 0.5s" />
+        <img class="img" data-scroll-reveal="enter bottom over 1s and move 100px" />
+        <img class="img" data-scroll-reveal="enter top over 0.5s and move 200px" />
+        <img class="img" data-scroll-reveal="enter top over 3s after 0.5s" />
+        <img class="img" data-scroll-reveal="enter left" />
+        <img class="img" data-scroll-reveal="enter top over 3s after 0.5s" />
+        <img class="img" data-scroll-reveal="enter bottom over 1s and move 100px"/>
+    </div>
+
+    <div class="colorbar1"></div>
+    <div class="colorsqure1"></div>
+    <div class="colorsqure2"></div>
+
+    <!--
+    <script src="https://unpkg.com/scrollreveal" type="text/javascript" charset="utf-8"></script>
+    <script>
+        window.sr = ScrollReveal();
+        window.sr = ScrollReveal({ reset: true });
+        sr.reveal('.img');
+    </script>
+    -->
+</body>
+</HTML>

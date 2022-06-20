@@ -1,0 +1,178 @@
+﻿<HTML>
+<HEAD>
+    <meta charset="UTF-8">
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <meta name="viewport" content="width=device-width,user-scalable-no,initil-scale=1.0" />
+    <link href="css/timecounter.css" rel="stylesheet" type="text/css" />
+    <link href="css/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="css/photowall.css" rel="stylesheet" type="text/css" />
+    <link href="css/glxyin.css" rel="stylesheet" type="text/css" />
+    <link href="css/rolling.css" rel="stylesheet" type="text/css" />
+    <link href="css/lunbo.css" rel="stylesheet" type="text/css" />
+
+    <TITLE>HOME</TITLE>
+
+    <style type="text/css">
+        body {
+            background-image: url(img/bg3.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0 0 0 0;
+        }
+
+        div {
+            margin: 5%;
+            text-align: center;
+            border-radius: 15px;
+        }
+    </style>
+</HEAD>
+
+<BODY ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+    <div width="80vw" style="background-color: rgb(255 255 255 /0.3);">
+        <div class="container">
+            <h1>
+                <span>already</span>
+                <div style="background-color: rgb(0 0 0 / 0.00);" id="Year">NA</div>
+            </h1>
+            <div class="countdouwn">
+                <div id="day">NA</div>
+                <div id="hour">NA</div>
+                <div id="minute">NA</div>
+                <div id="second">NA</div>
+            </div>
+        </div>
+
+        <script>
+            function cautime() {
+                var begin = new Date('2021/6/28 10:35:00');
+                var now = new Date().getTime();
+                var gap = now - begin;
+                var second = 1000;
+                var minute = second * 60;
+                var hour = minute * 60;
+                var day = hour * 24;
+                var year = day * 365;
+
+                var y = Math.floor(gap / year);
+                var d = Math.floor((gap % year) / day);
+                var h = Math.floor((gap % day) / hour);
+                var m = Math.floor((gap % hour) / minute);
+                var s = Math.floor((gap % minute) / second);
+
+                d = addZero(d);
+                h = addZero(h);
+                m = addZero(m);
+                s = addZero(s);
+
+                document.getElementById('Year').innerText = y;
+                document.getElementById('day').innerText = d;
+                document.getElementById('hour').innerText = h;
+                document.getElementById('minute').innerText = m;
+                document.getElementById('second').innerText = s;
+            }
+
+            function addZero(num) {
+                return num < 10 ? '0' + num : num;
+            }
+
+            setInterval(cautime, 1000);
+        </script>
+    </div>
+
+    <ul class="navigation">
+        <li class="word"><a href="index.html">HOME</a></li>
+        <li class="word"><a href="photo.html" target="_blank">PHOTOGRAPH</a></li>
+        <li><img src="img/pig.svg" /></li>
+        <li class="word"><a href="experiences.html" target="_blank">EXPERIENCES</a></li>
+        <li class="word"><a href="future.html" target="_blank">TO&nbsp;DO</a></li>
+    </ul>
+
+    <div class="rolling1">
+        <div class="backgroundin" id="glxyin">
+            <span>HJX&MJH</span>
+
+            <script>
+                const background = document.querySelector(".backgroundin")
+                document.addEventListener("scroll", () => {
+                    const scrollY = window.scrollY
+                    if (scrollY > 0) {
+                        background.style.backgroundPosition = `calc(50% + ${scrollY}px) calc(50% + ${scrollY}px)`
+                    } else {
+                        background.style.backgroundPosition = ''
+                    }
+                })
+            </script>
+        </div>
+    </div>
+    <div class="rolling2 bg1">世间的美好</div>
+    <div class="rolling1">有千千万万种</div>
+    <div class="rolling2 bg2">日出日落是一种</div>
+    <div class="rolling1">见到你是一种</div>>
+
+    <div class="lunbo" style="border-radius:0;">
+        <ul class="picture" id="lunboimg">
+            <li class="pictures"></li>
+            <li class="pictures"></li>
+            <li class="pictures"></li>
+            <li class="pictures"></li>
+        </ul>
+        <ul class="imgword" id="lunboword">
+            <div>365</div>
+            <div>300</div>
+            <div>200</div>
+            <div>100</div>
+        </ul>
+        <div class="larrow"><img src="img/larr.png" onclick="next()" /></div>
+        <div class="rarrow"><img src="img/rarr.png" onclick="pre()" /></div>
+    </div>
+
+
+    <script>
+        var index = 1;
+        var lunboimg = document.getElementById("lunboimg");
+        var lunboword = document.getElementById("lunboword")
+        var imgleftnum = -3;
+        var wordleftnum = -303;
+
+        function moveimg() {
+            lunboimg.style.left = imgleftnum - 100 + "vw";
+            lunboword.style.left = wordleftnum + 100 + 'vw';
+            imgleftnum = imgleftnum - 100;
+            wordleftnum = wordleftnum +100;
+            index++;
+            if (index == 5) {
+                index = 1;
+                imgleftnum = -3;
+                wordleftnum = -303;
+                setTimeout(function () { lunboimg.style.left = "-3vw"; lunboword.style.left = "-303vw" }, 000);
+            }
+        }
+
+        var timeing = setInterval(moveimg, 4000);
+
+        function next() {
+            clearInterval(timeing);
+            moveimg();
+            timeing = setInterval(moveimg, 4000);
+        }
+
+        function pre() {
+            clearInterval(timeing);
+            lunboimg.style.left = imgleftnum + 100 + "vw";
+            lunboword.style.left = wordleftnum - 100 + 'vw';
+            imgleftnum = imgleftnum +100;
+            wordleftnum = wordleftnum - 100;
+            index--;
+            if (index == 0) {
+                index = 4;
+                imgleftnum = -303;
+                wordleftnum = -3;
+                setTimeout(function () { lunboimg.style.left = "-303vw"; lunboword.style.left = "-3vw" }, 000);
+            }
+            timeing = setInterval(moveimg, 4000);
+        }
+    </script>
+    </BODY>
+    </HTML>
