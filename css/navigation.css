@@ -150,8 +150,8 @@
 
 .navigation li{
     position:relative;
-    left:-15vw;
-    margin:0 1.5vw;
+    left:-3vw;
+    margin:0 1vw;
     width:30%;
     transition:0.5s;
 }
@@ -197,14 +197,14 @@
     position:relative;
     display:flex;
     height:4vh;
-    left:12vw;
+    left:15vw;
     top:3vh;
     list-style-type:none;
 }
 
 .navigation2 ul li{
     position:relative;
-    margin:0 1vw;
+    margin:0 1.5vw;
     text-align:center;
 }
 
