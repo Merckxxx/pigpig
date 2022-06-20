@@ -230,14 +230,14 @@
     opacity:0.7
 }
 
-.navigation2 ul li.first:hover~div{
+.navigation2 ul li a.first:hover~div{
     visibility:visible;
     left:10vw;
     width:12vw;
     background-color:burlywood;
 }
 
-.navigation2 ul li.second:hover~div{
+.navigation2 ul li a.second:hover~div{
     visibility:visible;
     left:23vw;
     width:22vw;
