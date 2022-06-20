@@ -86,7 +86,7 @@ div.rarrow img {
     width:104vw;
     height:30vh;
     left:-7vw;
-    margin: 10vh 0 6vh 0;
+    margin: 10vh 0 10vh 0;
     overflow:hidden;
 }
 
@@ -104,7 +104,7 @@ div.rarrow img {
     position: relative;
     display: flex;
     float: left;
-    width: 100vw;
+    width: 99vw;
     height: 30vh;
     margin: auto 1vw;
     background-size: cover;
@@ -176,7 +176,7 @@ div.rarrow img:hover {
 }
 
 .lunbo li.pictures:nth-of-type(1) {
-    background-color: aqua;
+    background-color: lightcyan;
     background-image: url(../img/100.jpg);
 }
 
@@ -186,7 +186,7 @@ div.rarrow img:hover {
 }
 
 .lunbo li.pictures:nth-of-type(3) {
-    background-color: blueviolet;
+    background-color: lightblue;
     background-image: url(../img/300.jpg);
 }
 
