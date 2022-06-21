@@ -228,3 +228,7 @@
 .waterfall img:nth-of-type(26) {
     content:url(../img/p30.jpg);
 }
+
+.waterfall img:nth-of-type(27) {
+    content:url(../img/p1.jpg);
+}
